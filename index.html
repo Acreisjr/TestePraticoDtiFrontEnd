@@ -5,18 +5,32 @@
     <title>Tela de Login</title>
     <link rel="icon" type="imagem/png" href="imgs/icon.png">
     <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   </head>
   <body>
         <div id="conteudoNaoLogado">
-          <h1 id="titulo">Tela de Login</h1>
+          <img id="logo-dti" src="imgs/dti-logo.png" alt="Logo da empresa Dti">
+          <h1 id="titulo">Login</h1>
           <section>
-            <label for="inputUsuario">Usuário: </label><input type="text" name="inputUsuario" id="inputUsuario"  value="">
+            <input placeholder="Email" type="text" name="inputUsuario" id="inputUsuario"  value="">
           </section>
           <section>
-            <label for="inputSenha">Senha: </label> <input type="password" name="inputSenha" id="inputSenha" value="">
+            <input placeholder="Senha" type="password" name="inputSenha" id="inputSenha" value="">
           </section>
-            <button type="submit" name="btnEnviar" id="btnEnviar">Enviar</button>
+          <button type="submit" name="btnEnviar" id="btnEnviar" class="btn">Login</button>
+          <p id="aviso"></p>
         </div>
-
+        <div id="loading" class="icone">
+          <div class="ponto1"></div>
+          <div class="ponto2"></div>
+        </div>
+        <div id="conteudoLogado">
+          <p>Olá, você está logado!</p>
+          <button type="submit" name="btnSair" id="btnSair" class="btn">Logout</button>
+        </div>
+        <script src="login.js" charset="utf-8"></script>
+        <script src="Request.js" charset="utf-8"></script>
   </body>
 </html>
+<!-- 94PgyhlUV7Te -->
+ <!-- ​guildafront@FELChagashotmail.onmicrosoft.com -->
